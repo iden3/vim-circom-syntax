@@ -3,30 +3,23 @@
 This is a [circom](https://github.com/iden3/circom) syntax highlighting file
 for vim, based on the vim 8.1 javascript syntax highlighting file.
 
-## Installation in vim
+## Screenshot
 
-Copy the syntax file to the vim syntax folder:
-```
-mkdir -p ~/.vim/syntax
-cp syntax/circom.vim ~/.vim/syntax/circom.vim
-```
+![](circom.png)
 
-Enable the circom syntax for files with circom extensions in your `~/.vimrc`
-with the following line:
+## Installation in vim/nvim
+
+- Using [Plug](https://github.com/junegunn/vim-plug) (recommended), add this line to your `.vimrc`:
 ```
-au BufRead,BufNewFile *.circom set filetype=circom
+Plug 'iden3/vim-circom-syntax'
 ```
 
-## Installation in neovim
+- Using [Vundle](https://github.com/gmarik/vundle), add this line to your `.vimrc`:
+```
+Plugin 'iden3/vim-circom-syntax'
 
-Copy the syntax file to the neovim syntax folder:
-```
-mkdir -p ~/.config/nvim/syntax
-cp syntax/circom.vim ~/.config/nvim/syntax/circom.vim
-```
 
-Enable the circom syntax for files with circom extensions in your `~/.config/nvim/init.vim`
-with the following line:
+- Using [NeoBundle](https://github.com/Shougo/neobundle.vim), add this line to your `.vimrc`:
 ```
-au BufRead,BufNewFile *.circom set filetype=circom
+NeoBundleLazy 'iden3/vim-circom-syntax', {'autoload':{'filetypes':['circom']}}
 ```
