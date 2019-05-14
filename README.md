@@ -17,7 +17,7 @@ Plug 'iden3/vim-circom-syntax'
 - Using [Vundle](https://github.com/gmarik/vundle), add this line to your `.vimrc`:
 ```
 Plugin 'iden3/vim-circom-syntax'
-
+```
 
 - Using [NeoBundle](https://github.com/Shougo/neobundle.vim), add this line to your `.vimrc`:
 ```
